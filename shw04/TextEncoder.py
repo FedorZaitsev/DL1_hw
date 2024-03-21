@@ -1,3 +1,5 @@
+import torch.nn as nn
+
 class TextEncoder(nn.Module):
     def __init__(self, model_name="distilbert-base-uncased", pretrained=True, trainable=False):
         super().__init__()
